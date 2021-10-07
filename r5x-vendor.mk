@@ -6,7 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/realme/r5x
 
 PRODUCT_COPY_FILES += \
-    vendor/realme/r5x/proprietary/bin/chargeonlymode:$(TARGET_COPY_OUT_SYSTEM)/bin/chargeonlymode \
     vendor/realme/r5x/proprietary/etc/camera/Charming.cng:$(TARGET_COPY_OUT_SYSTEM)/etc/camera/Charming.cng \
     vendor/realme/r5x/proprietary/etc/camera/M_Verify_Faster_Common_wp.model:$(TARGET_COPY_OUT_SYSTEM)/etc/camera/M_Verify_Faster_Common_wp.model \
     vendor/realme/r5x/proprietary/etc/camera/doubleloss_large.model:$(TARGET_COPY_OUT_SYSTEM)/etc/camera/doubleloss_large.model \
@@ -3605,7 +3604,9 @@ PRODUCT_COPY_FILES += \
     vendor/realme/r5x/proprietary/vendor/radio/qcril_database/upgrade/2_version_add_wps_config.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/2_version_add_wps_config.sql \
     vendor/realme/r5x/proprietary/vendor/radio/qcril_database/upgrade/3_version_update_wps_config.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/3_version_update_wps_config.sql \
     vendor/realme/r5x/proprietary/vendor/radio/qcril_database/upgrade/4_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/4_version_update_ecc_table.sql \
-    vendor/realme/r5x/proprietary/vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/5_version_update_ecc_table.sql
+    vendor/realme/r5x/proprietary/vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/5_version_update_ecc_table.sql \
+    vendor/realme/r5x/proprietary/product/lib/libsketchology_native.so:$(TARGET_COPY_OUT_SYSTEM)/product/lib/libsketchology_native.so \
+    vendor/realme/r5x/proprietary/product/lib64/libsketchology_native.so:$(TARGET_COPY_OUT_SYSTEM)/product/lib64/libsketchology_native.so
 
 PRODUCT_PACKAGES += \
     libantradio \
